@@ -12,7 +12,7 @@ switch (_type) do {
 	
 	#include "loadouts\USMCRiflePlatoon.sqf"
 	#include "loadouts\RURiflePlatoon.sqf"
-	#include "loadouts\WW2USAB.sqf"
-	#include "loadouts\WW2GERAB.sqf"
+	#include "loadouts\WW2_TFAR\USAirborne.sqf"
+	#include "loadouts\WW2_TFAR\GerAirbone.sqf"
 	
 };
