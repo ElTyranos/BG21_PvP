@@ -6,7 +6,7 @@
     Visit us on <a href="https://twitter.com/BattleGroup21">Twitter</a> | <a href="https://www.facebook.com/battlegroup21">Facebook</a> | <a href="https://www.youtube.com/c/Battlegroup21">YouTube</a> | <a href="http://www.battlegroup21.com">Our website</a></strong></sup>
 </p>
 
-The project is entirely **open-source** and all contributions are welcome. Feel free to maintain your own custom version, so long as the changes you make are open to the public in accordance with the GNU General Public License (GPLv2).
+Thanks to [dklolol](https://github.com/dklollol/Olsen-Framework-Arma-3)
   
 ### Guides & how-tos
 If you have trouble understanding how it all works, or where to start, read this [Wiki](https://github.com/ElTyranos/BG21_PvP/wiki) first.  
