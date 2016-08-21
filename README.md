@@ -3,7 +3,6 @@
 </p>
 
 <p align="center">
-    <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a>.<br/>
     Visit us on <a href="https://twitter.com/BattleGroup21">Twitter</a> | <a href="https://www.facebook.com/battlegroup21">Facebook</a> | <a href="https://www.youtube.com/c/Battlegroup21">YouTube</a> | <a href="http://www.battlegroup21.com">Our website</a></strong></sup>
 </p>
 
@@ -11,12 +10,8 @@ The project is entirely **open-source** and all contributions are welcome. Feel 
 
 ### Guides & how-tos
 If you have trouble understanding how it all works, or where to start, read this first:
-- [Wiki](https://github.com/ElTyranos/BG21_Sandbox.altis/wiki)
+- [Wiki](https://github.com/ElTyranos/BG21_PvP/wiki)
 
 #### Contributing
-You can help out with the ongoing development by looking for potential bugs in our code base, or by contributing new features. To contribute something, simply fork this repository and submit your pull requests for review by other collaborators. Remember to add yourself to the author array of any PBO you will be editing and the [`AUTHORS.txt`](https://github.com/acemod/ACE3/blob/master/AUTHORS.txt) file; including a valid email address.
-
-Please, use our [Issue Tracker](https://github.com/ElTyranos/BG21_Sandbox.altis/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
-
-#### Testing & building
-To help us test the latest development changes, download our master branch ([directly](https://github.com/ElTyranos/BG21_Sandbox.altis/archive/master.zip)
+You can help out with the ongoing development by looking for potential bugs in our code base, or by contributing new features. To contribute something, simply fork this repository and submit your pull requests for review by other collaborators.  
+Please, use our [Issue Tracker](https://github.com/ElTyranos/BG21_PvP/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
