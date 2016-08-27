@@ -6,3 +6,6 @@
 		
 		};
 	};
+	
+	respawn = 3;
+	respawnDelay = 3600;
