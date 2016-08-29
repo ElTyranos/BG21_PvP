@@ -12,5 +12,8 @@
 //_this select 8 : Whether to show header widget
 //_this select 9 : Whether to show entities / locations lists
 
+// Radios compatibility - activate only the one used in the mission
+// TFAR Compatibility (un-comment to activate)
+[player, true] call TFAR_fnc_forceSpectator;
 // ACRE 2 Compatibility (un-comment to activate)
 // _ret = [true] call acre_api_fnc_setSpectator;
