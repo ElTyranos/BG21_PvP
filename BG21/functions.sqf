@@ -8,6 +8,12 @@ bg21_fnc_log = {
 	diag_log  ('[BG21] ' + _tag + ': ' + _msg);
 };
 
+bg21_fnc_ismodloaded = {
+	params [["_modName", "", [""]]];
+
+	isClass (configFile >> "CfgPatches" >> _modName)
+};
+
 FNC_GetTeamVariable = {
 	
 	private ["_team", "_index", "_return", "_found", "_tempText"];
