@@ -14,5 +14,6 @@ switch (_type) do {
 	#include "loadouts\RURiflePlatoon.sqf"
 	#include "loadouts\WW2_TFAR\USAirborne.sqf"
 	#include "loadouts\WW2_TFAR\GerAirbone.sqf"
-	
+	#include "loadouts\Talibans.sqf"
+	#include "loadouts\Operators.sqf"
 };
