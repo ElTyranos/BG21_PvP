@@ -6,12 +6,16 @@
 
 switch (_type) do {
 
-	case "HUMMVEE": {
+	case "OstFront_Tank_R": {
 
 		_vehicle call FNC_RemoveAllVehicleGear;
 
-		["30Rnd_556x45_Stanag", 8] call FNC_AddItemVehicle;
-		["rhs_weap_m4a1_carryhandle"] call FNC_AddItemVehicle;
+		["ToolKit"] call FNC_AddItemVehicle;
+	};
+	case "OstFront_Tank_G": {
 
+		_vehicle call FNC_RemoveAllVehicleGear;
+
+		["ToolKit"] call FNC_AddItemVehicle;
 	};
 };

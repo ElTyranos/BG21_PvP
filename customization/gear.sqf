@@ -10,10 +10,10 @@ _unit call FNC_RemoveAllGear;
 
 switch (_type) do {
 	
-	#include "loadouts\USMCRiflePlatoon.sqf"
-	#include "loadouts\RURiflePlatoon.sqf"
 	#include "loadouts\WW2_TFAR\USAirborne.sqf"
 	#include "loadouts\WW2_TFAR\GerAirbone.sqf"
+	#include "loadouts\WW2_TFAR\URSS.sqf"
+	#include "loadouts\WW2_TFAR\Wehrmacht.sqf"
 	#include "loadouts\Talibans.sqf"
 	#include "loadouts\Operators.sqf"
 };
