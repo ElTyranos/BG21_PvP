@@ -2,6 +2,7 @@
 [this, "WW2URSS_PL"] call FNC_GearScript;
 [this, "WW2URSS_SL"] call FNC_GearScript;
 [this, "WW2URSS_TL"] call FNC_GearScript;
+[this, "WW2URSS_TL2"] call FNC_GearScript;
 [this, "WW2URSS_Marksman"] call FNC_GearScript;
 [this, "WW2URSS_RFAT"] call FNC_GearScript;
 [this, "WW2URSS_RFAT_AS"] call FNC_GearScript;
@@ -109,6 +110,10 @@
 	["LIB_7Rnd_762x38", 2] call FNC_AddItem;\
 	["LIB_M1895"] call FNC_AddItem;
 	
+#define PTRD \
+	["Lib_B32", 5] call FNC_AddItem;\
+	["LIB_PTRD"] call FNC_AddItem;
+	
 //CDC
 case (package + "PL"): {
 	
@@ -137,6 +142,13 @@ case (package + "TL"): {
 	items;
 	svt40;
 };
+case (package + "TL2"): {
+	
+	["V_LIB_SOV_RA_MosinBelt"] call FNC_AddItem;  //Vest
+	uniform;
+	items;
+	mosin;
+};
 
 //Sniper
 case (package + "Marksman"): {
@@ -153,9 +165,8 @@ case (package + "RFAT"): {
 	["V_LIB_SOV_RA_MosinBelt"] call FNC_AddItem;  //Vest
 	uniform;
 	items;
-	mosin;
-	["LIB_1Rnd_60mm_M6",2] call FNC_AddItem;
-	["LIB_M1A1_Bazooka"] call FNC_AddItem;
+	PTRD;
+	M1895;
 };
 case (package + "RFAT_AS"): {
 	
@@ -163,7 +174,6 @@ case (package + "RFAT_AS"): {
 	uniform;
 	items;
 	mosin;
-	["LIB_1Rnd_60mm_M6",3] call FNC_AddItem;
 };
 
 //MG+Pourv
