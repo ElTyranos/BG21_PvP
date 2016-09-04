@@ -2,6 +2,7 @@
 [this, "WW2Wehrmacht_PL"] call FNC_GearScript;
 [this, "WW2Wehrmacht_SL"] call FNC_GearScript;
 [this, "WW2Wehrmacht_TL"] call FNC_GearScript;
+[this, "WW2Wehrmacht_TL2"] call FNC_GearScript;
 [this, "WW2Wehrmacht_Marksman"] call FNC_GearScript;
 [this, "WW2Wehrmacht_RFAT"] call FNC_GearScript;
 [this, "WW2Wehrmacht_RFAT_AS"] call FNC_GearScript;
@@ -90,9 +91,9 @@
 	["lib_10Rnd_792x57", 10] call FNC_AddItem;\
 	["LIB_G43"] call FNC_AddItem;
 	
-#define mg42 \
+#define MG34 \
 	["LIB_50Rnd_792x57", 4] call FNC_AddItem;\
-	["LIB_MG42"] call FNC_AddItem;
+	["LIB_MG342"] call FNC_AddItem;
 
 #define mp40 \
 	["lib_32Rnd_9x19", 7] call FNC_AddItem;\
@@ -138,6 +139,13 @@ case (package + "TL"): {
 	items;
 	g43;
 };
+case (package + "TL2"): {
+	
+	["V_LIB_GER_VestKar98"] call FNC_AddItem;  //Vest
+	uniform_frame;
+	items;
+	kar;
+};
 
 //Sniper
 case (package + "Marksman"): {
@@ -181,7 +189,7 @@ case (package + "MG"): {
 	["V_LIB_GER_VestMG"] call FNC_AddItem;  //Vest
 	uniform_frame;
 	items;
-	mg42;
+	MG34;
 };
 case (package + "MG_AS"): {
 	["V_LIB_GER_VestKar98"] call FNC_AddItem;  //Vest
