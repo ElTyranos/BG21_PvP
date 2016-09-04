@@ -5,3 +5,6 @@
 
 //Example:
 //ADDSETUPMARKER(west, (60 * 5), "airfield");
+
+ADDSETUPMARKER(west, (60 * 10), "west");
+ADDSETUPMARKER(east, (60 * 10), "east");
