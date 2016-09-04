@@ -1,6 +1,6 @@
 saving = 0;
 respawn = "BASE";
-respawnDelay = 3600;
+respawnDelay = 7200;
 respawnDialog = 0;
 respawnOnStart = 0;
 respawnTemplates[] = {};
