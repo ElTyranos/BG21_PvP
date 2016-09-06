@@ -5,7 +5,7 @@
 
 //Enabled modules by default, disabled them by adding // in front.
 
-#include "start_radio\autodetect.sqf"
+#include "start_radio\root.sqf"
 #include "start_on_safe\root.sqf"
 #include "start_with_earplugs\root.sqf"
 
