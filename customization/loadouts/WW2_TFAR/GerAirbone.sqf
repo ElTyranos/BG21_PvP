@@ -77,7 +77,7 @@
 
 #define kar \
 	["lib_5Rnd_792x57", 20] call FNC_AddItem;\
-	["LIB_K98_BOLT"] call FNC_AddItem;
+	["LIB_K98"] call FNC_AddItem;
 
 #define g43 \
 	["lib_10Rnd_792x57", 10] call FNC_AddItem;\
@@ -101,7 +101,7 @@
 	
 #define kar_scoped \
 	["lib_5Rnd_792x57", 10] call FNC_AddItem;\
-	["LIB_K98ZF39_BOLT"] call FNC_AddItem;
+	["LIB_K98ZF39"] call FNC_AddItem;
 	
 //CDC
 case (package + "PL"): {
