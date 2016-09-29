@@ -20,18 +20,18 @@
 #define package "WW2Wehrmacht_"
 
 #define uniform_frame \
-	["U_LIB_GER_Schutze", "U_LIB_GER_Recruit", "U_LIB_GER_Art_schutze","U_LIB_GER_Gefreiter","U_LIB_GER_Pionier"] call FNC_AddItemRandom;\
+	["U_LIB_GER_Schutze", "U_LIB_GER_Recruit", "U_LIB_GER_Art_schutze","U_LIB_GER_Gefreiter","U_LIB_GER_Pionier","U_LIB_GER_MG_schutze"] call FNC_AddItemRandom;\
 	["B_LIB_GER_A_frame"] call FNC_AddItem;\
-	["H_LIB_GER_Helmet","H_LIB_GER_Helmet","H_LIB_GER_Helmet","H_LIB_GER_Helmet","H_LIB_GER_Cap"] call FNC_AddItemRandom;
+	["H_LIB_GER_Helmet"] call FNC_AddItem;
 
 #define uniform_bag \
-	["U_LIB_GER_Schutze", "U_LIB_GER_Recruit", "U_LIB_GER_Art_schutze","U_LIB_GER_Gefreiter","U_LIB_GER_Pionier"] call FNC_AddItemRandom;\
+	["U_LIB_GER_Schutze", "U_LIB_GER_Recruit", "U_LIB_GER_Art_schutze","U_LIB_GER_Gefreiter","U_LIB_GER_Pionier","U_LIB_GER_MG_schutze"] call FNC_AddItemRandom;\
 	["B_LIB_GER_Backpack"] call FNC_AddItem;\
-	["H_LIB_GER_Helmet","H_LIB_GER_Helmet","H_LIB_GER_Helmet","H_LIB_GER_Helmet","H_LIB_GER_Cap"] call FNC_AddItemRandom;
+	["H_LIB_GER_Helmet"] call FNC_AddItem;
 	
 #define uniform_sniper \
 	["U_LIB_GER_Scharfschutze"] call FNC_AddItem;\
-	["H_LIB_GER_HelmetCamo"] call FNC_AddItemRandom;	
+	["H_LIB_GER_HelmetCamo"] call FNC_AddItem;	
 	
 #define uniform_sltl \
 	["U_LIB_GER_Oberst", "U_LIB_GER_Leutnant"] call FNC_AddItemRandom;\
