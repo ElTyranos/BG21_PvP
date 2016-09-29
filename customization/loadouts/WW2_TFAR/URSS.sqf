@@ -40,7 +40,6 @@
 
 #define uniform_sniper \
 	["U_LIB_SOV_Sniper"] call FNC_AddItem;\
-	["H_LIB_SOV_RA_PrivateCap","H_LIB_SOV_RA_PrivateCap","H_LIB_SOV_RA_Helmet"] call FNC_AddItemRandom;
 	
 #define items \
 	["ItemMap"] call FNC_AddItem; \
