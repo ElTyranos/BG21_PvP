@@ -174,6 +174,7 @@ case (package + "RFAT_AS"): {
 	uniform;
 	items;
 	mosin;
+	["Lib_B32", 5] call FNC_AddItem;
 };
 
 //MG+Pourv
