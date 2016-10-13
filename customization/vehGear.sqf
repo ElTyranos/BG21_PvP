@@ -18,6 +18,6 @@ switch (_type) do {
 		_vehicle call FNC_RemoveAllVehicleGear;
 
 		["ToolKit"] call FNC_AddItemVehicle;
-		["LIB_47Rnd_762x54", 10] call FNC_AddItemVehicle;\
+		["LIB_50Rnd_792x57", 10] call FNC_AddItemVehicle;\
 	};
 };
