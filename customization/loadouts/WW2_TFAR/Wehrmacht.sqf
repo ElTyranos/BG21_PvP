@@ -180,7 +180,6 @@ case (package + "RFPZFT"): {
 	uniform_frame;
 	items;
 	kar;
-	["LIB_1Rnd_PzFaust_30m",1] call FNC_AddItem;
 	["LIB_PzFaust_30m"] call FNC_AddItem;
 };
 
