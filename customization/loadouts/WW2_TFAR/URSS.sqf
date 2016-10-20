@@ -75,11 +75,11 @@
 #define demokit \
 	["DemoCharge_Remote_Mag", 4] call FNC_AddItem; \
 	["ACE_M26_Clacker"] call FNC_AddItem; \
-	["ACE_DefusalKit", 2] call FNC_AddItem;
+	["ACE_DefusalKit", 1] call FNC_AddItem;
 	
 #define minekit \
-	["DemoCharge_Remote_Mag", 4] call FNC_AddItem; \
-	["ACE_DefusalKit", 2] call FNC_AddItem;
+	["LIB_US_M1A1_ATMINE_mag", 2] call FNC_AddItem; \
+	["ACE_DefusalKit", 1] call FNC_AddItem;
 	
 #define mosin \
 	["LIB_5Rnd_762x54", 20] call FNC_AddItem;\

@@ -80,7 +80,7 @@
 	["ACE_DefusalKit", 1] call FNC_AddItem;
 	
 #define minekit \
-	["DemoCharge_Remote_Mag", 4] call FNC_AddItem; \
+	["LIB_TMI_42_MINE_mag", 2] call FNC_AddItem; \
 	["ACE_DefusalKit", 1] call FNC_AddItem;
 
 #define kar \
