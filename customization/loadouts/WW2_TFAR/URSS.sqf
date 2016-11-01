@@ -193,17 +193,17 @@ case (package + "MG_AS"): {
 
 //Demo
 case (package + "Explos"): {
-	["V_LIB_SOV_RA_PPShBelt"] call FNC_AddItem;  //Vest
+	["V_LIB_SOV_RA_MosinBelt"] call FNC_AddItem;  //Vest
 	uniform;
 	items;
-	ppsh41_m;
+	mosin;
 	demokit;
 };
 case (package + "Mines"): {
-	["V_LIB_SOV_RA_PPShBelt"] call FNC_AddItem;  //Vest
+	["V_LIB_SOV_RA_MosinBelt"] call FNC_AddItem;  //Vest
 	uniform;
 	items;
-	ppsh41_m;
+	mosin;
 	minekit;
 };
 
@@ -235,16 +235,18 @@ case (package + "TankCommander"): {
 	["U_LIB_SOV_Tank_ryadovoi"] call FNC_AddItem;
 	["H_LIB_SOV_RA_OfficerCap"] call FNC_AddItem;
 	["V_LIB_SOV_RA_OfficerVest"] call FNC_AddItem;
+	["B_LIB_SOV_RA_Rucksack"] call FNC_AddItem;
 	["ItemRadio"] call FNC_AddItem;
 	["LIB_Binocular_SU"] call FNC_AddItem;
 	items;
+	plkit;
 	ppsh41_m;
 	M1895;
 };
 case (package + "TankCrew"): {
 	["U_LIB_SOV_Tank_ryadovoi"] call FNC_AddItem;
 	["H_LIB_SOV_TankHelmet"] call FNC_AddItem;
-	["V_LIB_SOV_RA_Belt"] call FNC_AddItem;
+	["V_LIB_SOV_RA_PPShBelt"] call FNC_AddItem;
 	items;
-	M1895;
+	ppsh41_m;
 };
