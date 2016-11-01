@@ -50,7 +50,7 @@
 	["ACE_MapTools"] call FNC_AddItem; \
 	["ACE_Flashlight_MX991"] call FNC_AddItem; \
 	["ACE_earplugs"] call FNC_AddItem; \
-	["LIB_US_Mk_2", 2] call FNC_AddItem;
+	["LIB_f1", 2] call FNC_AddItem;
 	
 #define plkit \
 	["ItemRadio"] call FNC_AddItem; \
