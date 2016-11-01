@@ -201,18 +201,18 @@ case (package + "MG_AS"): {
 
 //Demos
 case (package + "Explos"): {
-	["V_LIB_GER_VestG43"] call FNC_AddItem;  //Vest
+	["V_LIB_GER_VestKar98"] call FNC_AddItem;  //Vest
 	uniform_bag;
 	items;
-	g43;
+	kar;
 	demokit;
 };
 case (package + "Mines"): {
-	["V_LIB_GER_VestG43"] call FNC_AddItem;  //Vest
+	["V_LIB_GER_VestKar98"] call FNC_AddItem;  //Vest
 	uniform_bag;
 	items;
-	g43;
 	minekit;
+	kar;
 };
 
 //Rifleman
