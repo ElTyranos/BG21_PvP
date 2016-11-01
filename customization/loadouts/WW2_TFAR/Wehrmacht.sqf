@@ -16,6 +16,7 @@
 [this, "WW2Wehrmacht_RFMP44"] call FNC_GearScript;
 [this, "WW2Wehrmacht_TankCommander"] call FNC_GearScript;
 [this, "WW2Wehrmacht_TankCrew"] call FNC_GearScript;
+[this, "WW2Wehrmacht_Pilot"] call FNC_GearScript;
 */
 #define package "WW2Wehrmacht_"
 
@@ -260,4 +261,13 @@ case (package + "TankCrew"): {
 	["V_LIB_GER_TankPrivateBelt"] call FNC_AddItem;
 	items;
 	p38;
+};
+case (package + "Pilot"): {
+	["U_LIB_GER_LW_pilot"] call FNC_AddItem;
+	["H_LIB_GER_LW_PilotHelmet"] call FNC_AddItem;
+	["V_LIB_GER_OfficerBelt"] call FNC_AddItem;
+	["B_LIB_GER_LW_Paradrop"] call FNC_AddItem;
+	items;
+	p38;
+	slkit;
 };
