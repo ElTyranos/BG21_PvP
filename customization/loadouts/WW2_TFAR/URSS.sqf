@@ -188,7 +188,7 @@ case (package + "MG_AS"): {
 	uniform_MG;
 	items;
 	mosin;
-	["LIB_20Rnd_762x63", 6] call FNC_AddItem;
+	["LIB_47Rnd_762x54", 6] call FNC_AddItem;
 };
 
 //Demo
