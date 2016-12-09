@@ -18,7 +18,7 @@ class Header {
 
 class Extended_PreInit_EventHandlers {
 	class Mission {
-		init = "'' call compile preprocessFileLineNumbers 'preinit.sqf'; 
+		init = "'' call compile preprocessFileLineNumbers 'preinit.sqf'"; 
 	};
 };
 
