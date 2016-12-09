@@ -7,5 +7,5 @@
 execVM "BG21\kill_logger.sqf";
 execVM "BG21\disableTIEquipment.sqf";
 
-//blooslust cleanup
+//blooslust cleanup - activate if respawns
 //execVM "BloodSplatter\Scripts\Cleanup.sqf"; 
