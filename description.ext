@@ -1,3 +1,6 @@
+author = "www.battlegroup21.com";
+// onLoadName = "Mission Names";
+// onLoadMission = "Subtitle";
 saving = 0;
 respawn = "BASE";
 respawnDelay = 7200;
@@ -5,14 +8,23 @@ respawnDialog = 0;
 respawnOnStart = 0;
 respawnTemplates[] = {"base"};
 respawnTemplatesVirtual[] = {};
+
+class Header {
+	gameType=TDM;
+	minPlayers = 1;
+	maxPlayers = 200;
+};
+
 class Extended_PreInit_EventHandlers {
 	class Mission {
 		init = "'' call compile preprocessFileLineNumbers 'preinit.sqf'; 
 	};
 };
+
 class CfgDebriefingSections {
 	class acex_killTracker {
 		title = "Acex Killed Events";
 		variable = "acex_killTracker_outputText";
 	};
 };
+
