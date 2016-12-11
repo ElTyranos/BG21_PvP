@@ -9,3 +9,6 @@ execVM "BG21\disableTIEquipment.sqf";
 
 //blooslust cleanup - activate if respawns
 //execVM "BloodSplatter\Scripts\Cleanup.sqf"; 
+// Artillery
+// _nul = ["Bo_GBU12_LGB",-1,5,180,240,2,6,120,"f0","f1"] execVM "BG21\exploArty.sqf";
+
