@@ -99,6 +99,6 @@ _rank = rank player;
 			["","<br/>"],
 			["Battlegroup21.com","align = 'center' shadow = '1' size = '0.5'"],
 			["","<br/>"],
-			["World War 2 Open Games","align = 'center' shadow = '1' size = '0.8'"]
+			["Mission Name","align = 'center' shadow = '1' size = '0.8'"]
 		]
 	] spawn BIS_fnc_typeText2;
