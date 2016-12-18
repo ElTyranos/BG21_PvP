@@ -11,7 +11,7 @@ if (hasInterface) then {
 
 /* ----- how to use camera script -----------------------------------------------------------------------
 
-_camera_shot = [position_1_name, position_2_name, target_name, duration, zoom_level1, zoom_level_2, attached, x_rel_coord, y_rel_coord, z_rel_coord] execVM "intro\camera_work.sqf";
+_camera_shot = [position_1_name, position_2_name, target_name, duration, zoom_level1, zoom_level_2, attached, x_rel_coord, y_rel_coord, z_rel_coord] execVM "BG21\BG21\intro\camera_work.sqf";
 
 Where
 _camera_shot	- string, is the name/number of the camera shot, you can have as many as you want see examples from down bellow
@@ -40,28 +40,28 @@ while {!loopdone} do {if ((introended) and (!loopdone)) then {loopdone = true; /
 
 // EXAMPLES------ insert your lines for camera shots starting from here -----------------------------------------
 
-// _shot0 = [cam0, cam0, target0, 15, 1, 1, true, 0, 0, 0] execVM "intro\camera_work.sqf";
+// _shot0 = [cam0, cam0, target0, 15, 1, 1, true, 0, 0, 0] execVM "BG21\intro\camera_work.sqf";
 // waitUntil {scriptdone _shot0};
 
-// _shot4 = [cam5, cam5, target3, 6, 0.8, 0.5, false, 0, 0, 0] execVM "intro\camera_work.sqf";
+// _shot4 = [cam5, cam5, target3, 6, 0.8, 0.5, false, 0, 0, 0] execVM "BG21\intro\camera_work.sqf";
 // waitUntil {scriptdone _shot4};
 
-// _shot5 = [cam6, cam6, target3, 6, 0.8, 0.5, false, 0, 0, 0] execVM "intro\camera_work.sqf";
+// _shot5 = [cam6, cam6, target3, 6, 0.8, 0.5, false, 0, 0, 0] execVM "BG21\intro\camera_work.sqf";
 // waitUntil {scriptdone _shot5};
 
-// _shot6 = [cam7, cam7, target3, 6, 0.8, 0.5, false, 0, 0, 0] execVM "intro\camera_work.sqf";
+// _shot6 = [cam7, cam7, target3, 6, 0.8, 0.5, false, 0, 0, 0] execVM "BG21\intro\camera_work.sqf";
 // waitUntil {scriptdone _shot6};
 
-// _shot1 = [cam1, cam1, target1, 4, 0.7, 0.1, true, 0, 0, 0] execVM "intro\camera_work.sqf";
+// _shot1 = [cam1, cam1, target1, 4, 0.7, 0.1, true, 0, 0, 0] execVM "BG21\intro\camera_work.sqf";
 // waitUntil {scriptdone _shot1};
 
-// _shot2 = [cam3, cam3, target2, 4, 0.7, 0.1, true, 0, 0, 0] execVM "intro\camera_work.sqf";
+// _shot2 = [cam3, cam3, target2, 4, 0.7, 0.1, true, 0, 0, 0] execVM "BG21\intro\camera_work.sqf";
 // waitUntil {scriptdone _shot2};
 
 
 /*
 if you want to add a forth or a fifth camera shot use a code like:
-_forthshot = [cam5, cam6, target4, 7, 1, 1, false] execVM "intro\camera_work.sqf";
+_forthshot = [cam5, cam6, target4, 7, 1, 1, false] execVM "BG21\intro\camera_work.sqf";
 waitUntil {scriptDone _forthshot};
 
 >>!! don't forget to name the objects cam5, cam6, target4 in editor 
