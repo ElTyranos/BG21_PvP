@@ -9,6 +9,3 @@
 #include "start_with_earplugs\root.sqf"
 
 //Additional modules that can be enabled by removing the // please note that there might be settings to be tweaked inside the modules/module folder.
-
-//#include "ao_limit\root.sqf"
-//#include "setup_timer\root.sqf"
