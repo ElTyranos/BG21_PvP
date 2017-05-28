@@ -7,6 +7,9 @@
 
 execVM "BG21\kill_logger.sqf";
 
+// ACRE 2
+[true, true] call acre_api_fnc_setupMission;
+
 //blooslust cleanup - activate if respawns
 //execVM "BloodSplatter\Scripts\Cleanup.sqf"; 
 
