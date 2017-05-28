@@ -97,7 +97,7 @@ _rank = rank player;
 			["Welcome,","align = 'center' shadow = '1' size = '1.2' font='PuristaBold'"],
 			[format ["  %1 %2", _rank, _name],"align = 'center' shadow = '1' size = '1'","#aaaaaa"],
 			["","<br/>"],
-			["Battlegroup21.com","align = 'center' shadow = '1' size = '0.5'"],
+			["www.battlegroup21.com","align = 'center' shadow = '1' size = '0.5'"],
 			["","<br/>"],
 			["Mission Name","align = 'center' shadow = '1' size = '0.8'"]
 		]
