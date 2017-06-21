@@ -8,7 +8,7 @@ respawnDialog = 0;
 respawnOnStart = 0;
 respawnTemplates[] = {"base"};
 respawnTemplatesVirtual[] = {};
-disabledAI = 1;
+disabledAI = 0;
 
 class Header {
 	gameType=TDM;
