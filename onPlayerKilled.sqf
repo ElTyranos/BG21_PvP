@@ -32,34 +32,47 @@
 
 	[_text, 0.55, 0.8, 45, 1] spawn BIS_fnc_dynamicText;
 
- * Add WMT keys back
- * 61 = F3 (Statistics)
- * 60 = F2 (Main menu)
- */
+	/* Add WMT keys back
+	 * 61 = F3 (Statistics)
+	 * 60 = F2 (Main menu)
+	 */
 
-[] spawn
-{
-    findDisplay 60492 displayAddEventHandler ["KeyDown",
-        {
-            if (((_this select 1) == 61) && (!dialog)) then
-            {
-                createDialog 'RscWMTMainMenu';
-            };
-            false
-        }
-    ];
-};
+	[] spawn
+	{
+		findDisplay 60492 displayAddEventHandler ["KeyDown",
+			{
+				if (((_this select 1) == 62) && (!dialog)) then
+				{
+				   [] call acre_sys_core_fnc_toggleHeadset;
+				};
+				false
+			}
+		];
+	};
 
-[] spawn
-{
-   findDisplay 60492 displayAddEventHandler ["KeyDown",
-        {
-            if (((_this select 1) == 60) && (!dialog)) then
-            {
-                call WMT_fnc_ShowStatistic;
-            };
-            false
-        }
-    ];
-};
+	[] spawn
+	{
+		findDisplay 60492 displayAddEventHandler ["KeyDown",
+			{
+				if (((_this select 1) == 61) && (!dialog)) then
+				{
+					createDialog 'RscWMTMainMenu';
+				};
+				false
+			}
+		];
+	};
+
+	[] spawn
+	{
+	   findDisplay 60492 displayAddEventHandler ["KeyDown",
+			{
+				if (((_this select 1) == 60) && (!dialog)) then
+				{
+					call WMT_fnc_ShowStatistic;
+				};
+				false
+			}
+		];
+	};
 // };
