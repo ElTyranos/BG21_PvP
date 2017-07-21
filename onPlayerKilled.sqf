@@ -14,17 +14,24 @@
  * _this select 8 : Whether to show header widget
  * _this select 9 : Whether to show entities / locations lists
  */
+ 
+// if (!isDedicated) then {
 
-["Initialize", [player, [], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator;
+	["Initialize", [player, [], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator;
 
-/* 
- * Set spectator for TFAR or ACRE
- */
+	/* Set spectator for TFAR or ACRE */
+	if (["acre_sys_radio"] call bg21_fnc_ismodloaded) then {[true] call acre_api_fnc_setSpectator};
+	if (["task_force_radio"] call bg21_fnc_ismodloaded) then {[player, true] call TFAR_fnc_forceSpectator};
 
-if (["acre_sys_radio"] call bg21_fnc_ismodloaded) then {[true] call acre_api_fnc_setSpectator};
-if (["task_force_radio"] call bg21_fnc_ismodloaded) then {[player, true] call TFAR_fnc_forceSpectator};
+	_text = format ["<t size='0.5' color='#ffffff'>%1
+	Show you kills by pressing <t color='#FFA500'>F2</t> (this is subject to issues sometimes).<br/>
+	Mute other spectators by pressing <t color='#FFA500'>F4</t>.<br/>
+	Close spectator HUD by pressing <t color='#FFA500'>CTRL+H</t>.<br/>
+	Press <t color='#FFA500'>SHIFT</t>, <t color='#FFA500'>ALT</t> or <t color='#FFA500'>SHIFT+ALT</t> to modify camera speed. Open map by pressing <t color='#FFA500'>M</t> and click anywhere to move camera to that postion.<br/> 	
+	Spectator controls can be customized in game <t color='#FFA500'>options->controls->'Camera'</t> tab.</t>"];
 
-/* 
+	[_text, 0.55, 0.8, 45, 1] spawn BIS_fnc_dynamicText;
+
  * Add WMT keys back
  * 61 = F3 (Statistics)
  * 60 = F2 (Main menu)
@@ -55,3 +62,4 @@ if (["task_force_radio"] call bg21_fnc_ismodloaded) then {[player, true] call TF
         }
     ];
 };
+// };
