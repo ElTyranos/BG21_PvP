@@ -12,7 +12,7 @@ execVM "BG21\kill_logger.sqf";
 [false, true] call acre_api_fnc_setupMission;
 
 //blooslust cleanup - activate if respawns
-//execVM "BloodSplatter\Scripts\Cleanup.sqf"; 
+// execVM "BloodSplatter\Scripts\Cleanup.sqf";
 
 // Artillery
 // _nul = ["Bo_GBU12_LGB",-1,5,180,240,2,6,120,"f0","f1"] execVM "BG21\exploArty.sqf";
