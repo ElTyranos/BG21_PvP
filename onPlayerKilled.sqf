@@ -14,10 +14,16 @@
  * _this select 8 : Whether to show header widget
  * _this select 9 : Whether to show entities / locations lists
  */
- 
-// if (!isDedicated) then {
 
-	["Initialize", [player, [], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator;
+	/* Spectator Mode 1 : free cam, full UI	*/
+	// ["Initialize", [player, [], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator;
+
+	/* Spectator Mode 2 : ennemy side is locked	*/
+	switch (playerSide) do {
+		case WEST: {		["Initialize", [player, [WEST], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
+		case EAST: {		["Initialize", [player, [EAST], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
+		case RESISTANCE: {	["Initialize", [player, [RESISTANCE], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
+	};
 
 	/* Set spectator for TFAR or ACRE */
 	if (["acre_sys_radio"] call bg21_fnc_ismodloaded) then {[true] call acre_api_fnc_setSpectator};
@@ -76,4 +82,3 @@
 			}
 		];
 	};
-// };
