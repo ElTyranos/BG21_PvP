@@ -23,6 +23,7 @@
 	if (["acre_sys_radio"] call bg21_fnc_ismodloaded) then {[true] call acre_api_fnc_setSpectator};
 	if (["task_force_radio"] call bg21_fnc_ismodloaded) then {[player, true] call TFAR_fnc_forceSpectator};
 
+	/* Shows help */
 	_text = format ["<t size='0.5' color='#ffffff'>%1
 	Show you kills by pressing <t color='#FFA500'>F2</t> (this is subject to issues sometimes).<br/>
 	Mute other spectators by pressing <t color='#FFA500'>F4</t>.<br/>
@@ -35,7 +36,7 @@
 	/* Add WMT keys back
 	 * 61 = F3 (Statistics)
 	 * 60 = F2 (Main menu)
-	 */
+	 * 60 = F4 (ACRE Mute) */
 
 	[] spawn
 	{
