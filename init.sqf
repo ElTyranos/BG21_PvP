@@ -2,7 +2,6 @@
 
 #include "BG21\StartOnSafe.sqf"
 #include "BG21\StartWithEarplugs.sqf"
-#include "BG21\bloodlust.sqf"
 #include "BG21\intro\intro.sqf";
 
 execVM "BG21\kill_logger.sqf";
