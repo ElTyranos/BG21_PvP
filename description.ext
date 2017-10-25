@@ -8,7 +8,6 @@ respawnDialog = 0;
 respawnOnStart = 0;
 respawnTemplates[] = {"ace_spectator"};
 respawnTemplatesVirtual[] = {};
-disabledAI = 0;
 
 class Header {
 	gameType=TDM;
