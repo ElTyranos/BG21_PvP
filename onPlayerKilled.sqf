@@ -14,28 +14,36 @@
  * _this select 8 : Whether to show header widget
  * _this select 9 : Whether to show entities / locations lists
  */
-
+ 
 	/* Spectator Mode 1 : free cam, full UI	*/
 	// ["Initialize", [player, [], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator;
 
 	/* Spectator Mode 2 : ennemy side is locked	*/
+	// switch (playerSide) do {
+		// case WEST: {		["Initialize", [player, [WEST], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
+		// case EAST: {		["Initialize", [player, [EAST], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
+		// case RESISTANCE: {	["Initialize", [player, [RESISTANCE], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
+	// };
+	
+	/* Spectator Mode 3 : ACE3 + ennemy side is locked	*/
 	switch (playerSide) do {
-		case WEST: {		["Initialize", [player, [WEST], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
-		case EAST: {		["Initialize", [player, [EAST], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
-		case RESISTANCE: {	["Initialize", [player, [RESISTANCE], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
+		case WEST: { [[west], [east,resistance,civilian]] call ace_spectator_fnc_updateSides; };
+		case EAST: { [[east], [west,resistance,civilian]] call ace_spectator_fnc_updateSides; };		
+		case RESISTANCE: { [[resistance], [east,west,civilian]] call ace_spectator_fnc_updateSides; };
 	};
-
+		
 	/* Set spectator for TFAR or ACRE */
-	if (["acre_sys_radio"] call bg21_fnc_ismodloaded) then {[true] call acre_api_fnc_setSpectator};
-	if (["task_force_radio"] call bg21_fnc_ismodloaded) then {[player, true] call TFAR_fnc_forceSpectator};
+	// ALREADY IN ACE SPECTATOR
+	// if (["acre_sys_radio"] call bg21_fnc_ismodloaded) then {[true] call acre_api_fnc_setSpectator};
+	// if (["task_force_radio"] call bg21_fnc_ismodloaded) then {[player, true] call TFAR_fnc_forceSpectator};
 
 	/* Shows help */
 	_text = format ["<t size='0.5' color='#ffffff'>%1
-	Show you kills by pressing <t color='#FFA500'>F2</t> (this is subject to issues sometimes).<br/>
-	Mute other spectators by pressing <t color='#FFA500'>F4</t>.<br/>
-	Close spectator HUD by pressing <t color='#FFA500'>CTRL+H</t>.<br/>
-	Press <t color='#FFA500'>SHIFT</t>, <t color='#FFA500'>ALT</t> or <t color='#FFA500'>SHIFT+ALT</t> to modify camera speed. Open map by pressing <t color='#FFA500'>M</t> and click anywhere to move camera to that postion.<br/> 	
-	Spectator controls can be customized in game <t color='#FFA500'>options->controls->'Camera'</t> tab.</t>"];
+	Show spectator help by presing <t color='#FFA500'>F1</t>.<br/>
+	Show you kills by pressing <t color='#FFA500'>F2</t> (this won't work sometimes).<br/>
+	Mute other spectators by pressing <t color='#FFA500'>CTRL+SHIT+DOWN</t> by default OR <t color='#FFA500'>F4</t>.<br/>
+	Open map by pressing <t color='#FFA500'>M</t> and click anywhere to move camera to that postion.<br/> 	
+	Spectator controls can be customized in game <t color='#FFA500'>options>controls>Camera</t> tab.</t>"];
 
 	[_text, 0.55, 0.8, 45, 1] spawn BIS_fnc_dynamicText;
 
@@ -43,23 +51,13 @@
 	 * 61 = F3 (Statistics)
 	 * 60 = F2 (Main menu)
 	 * 60 = F4 (ACRE Mute) */
-
+	 
+	 // Vanilla Display ID = 20492
+	 // ACE Display ID = 60000
+	 
 	[] spawn
 	{
-		findDisplay 60492 displayAddEventHandler ["KeyDown",
-			{
-				if (((_this select 1) == 62) && (!dialog)) then
-				{
-				   [] call acre_sys_core_fnc_toggleHeadset;
-				};
-				false
-			}
-		];
-	};
-
-	[] spawn
-	{
-		findDisplay 60492 displayAddEventHandler ["KeyDown",
+		findDisplay 60000 displayAddEventHandler ["KeyDown",
 			{
 				if (((_this select 1) == 61) && (!dialog)) then
 				{
@@ -72,11 +70,25 @@
 
 	[] spawn
 	{
-	   findDisplay 60492 displayAddEventHandler ["KeyDown",
+	   findDisplay 60000 displayAddEventHandler ["KeyDown",
 			{
 				if (((_this select 1) == 60) && (!dialog)) then
 				{
 					call WMT_fnc_ShowStatistic;
+				};
+				false
+			}
+		];
+	};
+
+	// Unecessary because ACE spectator fixed this, but kept for backward compabtibily of players brains
+	[] spawn
+	{
+		findDisplay 60000 displayAddEventHandler ["KeyDown",
+			{
+				if (((_this select 1) == 62) && (!dialog)) then
+				{
+				   [] call acre_sys_core_fnc_toggleHeadset;
 				};
 				false
 			}
