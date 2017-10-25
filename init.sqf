@@ -7,8 +7,8 @@ execVM "BG21\kill_logger.sqf";
 [] call WMT_fnc_BriefingMap;
 
 // ACRE 2 [babel,radios]
-// babel (bool) – True/False setting to specify whether each side should speak their own Babel language; making them incomprehensible to eachother.
-// radios (bool) – True/False to specify whether default radio channels should be setup differently for each side in the game.
+// babel (bool) â€“ True/False setting to specify whether each side should speak their own Babel language; making them incomprehensible to eachother.
+// radios (bool) â€“ True/False to specify whether default radio channels should be setup differently for each side in the game.
 [false, true] call acre_api_fnc_setupMission;
 
 //blooslust cleanup - activate if respawns
