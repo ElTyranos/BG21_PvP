@@ -1,5 +1,3 @@
-#define framework
-
 #include "BG21\StartOnSafe.sqf"
 #include "BG21\StartWithEarplugs.sqf"
 #include "BG21\intro\intro.sqf";
