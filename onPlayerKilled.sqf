@@ -14,7 +14,7 @@
  * _this select 8 : Whether to show header widget
  * _this select 9 : Whether to show entities / locations lists
  */
- 
+
 	/* Spectator Mode 1 : free cam, full UI	*/
 	// ["Initialize", [player, [], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator;
 
@@ -24,14 +24,14 @@
 		// case EAST: {		["Initialize", [player, [EAST], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
 		// case RESISTANCE: {	["Initialize", [player, [RESISTANCE], true, true, true, false, false, true, true, true]] call BIS_fnc_EGSpectator; };
 	// };
-	
+
 	/* Spectator Mode 3 : ACE3 + ennemy side is locked	*/
 	switch (playerSide) do {
 		case WEST: { [[west], [east,resistance,civilian]] call ace_spectator_fnc_updateSides; };
 		case EAST: { [[east], [west,resistance,civilian]] call ace_spectator_fnc_updateSides; };		
 		case RESISTANCE: { [[resistance], [east,west,civilian]] call ace_spectator_fnc_updateSides; };
 	};
-		
+
 	/* Set spectator for TFAR or ACRE */
 	// ALREADY IN ACE SPECTATOR
 	// if (["acre_sys_radio"] call bg21_fnc_ismodloaded) then {[true] call acre_api_fnc_setSpectator};
@@ -51,10 +51,10 @@
 	 * 61 = F3 (Statistics)
 	 * 60 = F2 (Main menu)
 	 * 60 = F4 (ACRE Mute) */
-	 
+
 	 // Vanilla Display ID = 20492
 	 // ACE Display ID = 60000
-	 
+
 	[] spawn
 	{
 		findDisplay 60000 displayAddEventHandler ["KeyDown",
@@ -70,7 +70,7 @@
 
 	[] spawn
 	{
-	   findDisplay 60000 displayAddEventHandler ["KeyDown",
+			findDisplay 60000 displayAddEventHandler ["KeyDown",
 			{
 				if (((_this select 1) == 60) && (!dialog)) then
 				{
