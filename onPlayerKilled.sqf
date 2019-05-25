@@ -57,6 +57,7 @@
 
 	[] spawn
 	{
+		waitUntil { !isNull findDisplay 60000 };
 		findDisplay 60000 displayAddEventHandler ["KeyDown",
 			{
 				if (((_this select 1) == 61) && (!dialog)) then
@@ -70,7 +71,8 @@
 
 	[] spawn
 	{
-			findDisplay 60000 displayAddEventHandler ["KeyDown",
+		waitUntil { !isNull findDisplay 60000 };
+		findDisplay 60000 displayAddEventHandler ["KeyDown",
 			{
 				if (((_this select 1) == 60) && (!dialog)) then
 				{
@@ -84,6 +86,7 @@
 	// Unecessary because ACE spectator fixed this, but kept for backward compabtibily of players brains
 	[] spawn
 	{
+		waitUntil { !isNull findDisplay 60000 };
 		findDisplay 60000 displayAddEventHandler ["KeyDown",
 			{
 				if (((_this select 1) == 62) && (!dialog)) then
