@@ -1,6 +1,6 @@
 author = "www.battlegroup21.com";
-// onLoadName = "Mission Names";
-// onLoadMission = "Subtitle";
+onLoadName = "World War 2 : Open Games";
+onLoadMission = "www.battlegroup21.com";
 saving = 0;
 respawn = "BASE";
 respawnDelay = 7200;
