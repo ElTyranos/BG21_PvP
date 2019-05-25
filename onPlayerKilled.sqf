@@ -97,3 +97,31 @@
 			}
 		];
 	};
+
+	// Displays timer to end of mission
+	[] spawn
+	{
+		private["_ctrl", "_leftTime", "_s1"];
+		waitUntil { !isNull findDisplay 60000 };
+
+		disableSerialization;
+		uisleep 1.;
+
+		_ctrl = findDisplay 60000 ctrlCreate ["RscText", -1];
+		_ctrl ctrlSetPosition [0.5, safezoneY, 0.15, 0.05];
+		_ctrl ctrlSetText "00:00";
+		_ctrl ctrlSetTextColor [0.75, 0.75, 0.75, 1];
+		_ctrl ctrlCommit 0;
+
+		while {time > 0.1} do {
+			private _leftTime = (WMT_Global_LeftTime select 0);
+			_leftTime = _leftTime - (diag_tickTime - (WMT_Local_LeftTime select 0));
+			_leftTime = 0 max _leftTime;
+			_s1 = [_leftTime , "MM:SS"] call BIS_fnc_secondsToString;
+			_ctrl ctrlSetText _s1;
+			_ctrl ctrlCommit 0;
+			uisleep 0.1;
+		};
+
+		ctrlDelete _ctrl;
+	};
