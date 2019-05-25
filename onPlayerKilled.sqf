@@ -40,9 +40,9 @@
 	/* Shows help */
 	_text = format ["<t size='0.5' color='#ffffff'>%1
 	Show spectator help by presing <t color='#FFA500'>F1</t>.<br/>
-	Show you kills by pressing <t color='#FFA500'>F2</t> (this won't work sometimes).<br/>
-	Mute other spectators by pressing <t color='#FFA500'>CTRL+SHIT+DOWN</t> by default OR <t color='#FFA500'>F4</t>.<br/>
-	Open map by pressing <t color='#FFA500'>M</t> and click anywhere to move camera to that postion.<br/> 	
+	Show you kills by pressing <t color='#FFA500'>F2</t>.<br/>
+	Mute other spectators by pressing <t color='#FFA500'>CTRL+SHIFT+DOWN</t> or <t color='#FFA500'>F4</t>.<br/>
+	Open map by pressing <t color='#FFA500'>M</t> and click anywhere to move camera to that postion.<br/>
 	Spectator controls can be customized in game <t color='#FFA500'>options>controls>Camera</t> tab.</t>"];
 
 	[_text, 0.55, 0.8, 45, 1] spawn BIS_fnc_dynamicText;
