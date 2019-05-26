@@ -1,8 +1,8 @@
-#include "BG21\StartOnSafe.sqf"
-#include "BG21\StartWithEarplugs.sqf"
-#include "BG21\intro\intro.sqf";
+#include "\WW2OG_AllInOne\fnc\fn_StartOnSafe.sqf"
+#include "\WW2OG_AllInOne\fnc\fn_StartWithEarplugs.sqf"
+#include "\WW2OG_AllInOne\fnc\fn_IntroScreen.sqf";
 
-execVM "BG21\kill_logger.sqf";
+// execVM "\WW2OG_AllInOne\fnc\fn_kill_logger.sqf";
 
 [] call WMT_fnc_BriefingMap;
 
@@ -15,4 +15,9 @@ execVM "BG21\kill_logger.sqf";
 // execVM "BloodSplatter\Scripts\Cleanup.sqf";
 
 // Artillery
-// _nul = ["Bo_GBU12_LGB",-1,5,180,240,2,6,120,"f0","f1"] execVM "BG21\exploArty.sqf";
+// _nul = ["Bo_GBU12_LGB",-1,5,180,240,2,6,120,"f0","f1"] execVM "\WW2OG_AllInOne\fnc\fn_exploArty.sqf";
+
+if (!isDedicated) then
+{
+	[] execVM "\WW2OG_AllInOne\fnc\fn_OutofAera_client.sqf";
+};
