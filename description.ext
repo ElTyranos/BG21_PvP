@@ -1,13 +1,13 @@
 author = "www.battlegroup21.com";
 onLoadName = "World War 2 : Open Games";
 onLoadMission = "www.battlegroup21.com";
+respawnTemplates[] = {"WW2_Open_Games"};
+respawnTemplatesVirtual[] = {};
 saving = 0;
 respawn = "BASE";
-respawnDelay = 7200;
+respawnDelay = 1e10;
 respawnDialog = 0;
 respawnOnStart = 0;
-respawnTemplates[] = {"ace_spectator"};
-respawnTemplatesVirtual[] = {};
 
 class Header {
 	gameType=TDM;
