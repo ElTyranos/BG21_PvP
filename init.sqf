@@ -1,7 +1,7 @@
 if (!isDedicated) then {
-	player call BG21_fnc_StartOnSafe;
-	player call BG21_fnc_StartWithEarplugs;
 	player call BG21_fnc_IntroScreen;
+	player call BG21_fnc_StartWithEarplugs;
+	player call BG21_fnc_StartOnSafe;
 };
 
 // ACRE 2 [babel,radios]
