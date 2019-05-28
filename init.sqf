@@ -1,10 +1,8 @@
-#include "\WW2OG_AllInOne\fnc\fn_StartOnSafe.sqf"
-#include "\WW2OG_AllInOne\fnc\fn_StartWithEarplugs.sqf"
-#include "\WW2OG_AllInOne\fnc\fn_IntroScreen.sqf";
-
-// execVM "\WW2OG_AllInOne\fnc\fn_kill_logger.sqf";
-
-[] call WMT_fnc_BriefingMap;
+if (!isDedicated) then {
+	player call BG21_fnc_StartOnSafe;
+	player call BG21_fnc_StartWithEarplugs;
+	player call BG21_fnc_IntroScreen;
+};
 
 // ACRE 2 [babel,radios]
 // babel (bool) – True/False setting to specify whether each side should speak their own Babel language; making them incomprehensible to eachother.
